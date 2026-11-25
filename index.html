@@ -17,7 +17,7 @@
 </div></header>
 <main id="main">
 <section class="hero" aria-labelledby="hero-title"><div class="wrap hero-grid">
-  <div><p class="eyebrow">iPhone trackpad &amp; keyboard for Mac</p><h1 id="hero-title">Your Mac.<br>Within reach.</h1><p class="intro">Browse, scroll and type from wherever you’re comfortable. Recline turns your iPhone into a wireless trackpad and keyboard, while a small menu-bar app keeps your Mac connected.</p><a class="button light" href="./downloads/Recline-macOS-arm64.zip" download>Download Recline for Mac</a><p class="meta">Version 1.1.1 · Apple Silicon · One-time iPhone certificate setup</p></div>
+  <div><p class="eyebrow">iPhone trackpad &amp; keyboard for Mac</p><h1 id="hero-title">Your Mac.<br>Within reach.</h1><p class="intro">Browse, scroll and type from wherever you’re comfortable. Recline turns your iPhone into a wireless trackpad and keyboard, while a small menu-bar app keeps your Mac connected.</p><a class="button light" href="./downloads/Recline-macOS-arm64.zip" download>Download Recline for Mac</a><p class="meta">Version 1.2.0 · Apple Silicon · One-time iPhone certificate setup</p></div>
   <figure class="hero-art"><div class="logo"><img src="./assets/app-icon.svg" width="1024" height="1024" alt="Recline seated-person logo"></div><figcaption>A little more room to get comfortable.</figcaption></figure>
 </div></section>
 <div class="promise"><div class="wrap"><span>No iPhone app to install</span><span>No account required</span><span>Encrypted HTTPS connection</span><span>Runs in your Mac’s menu bar</span></div></div>
@@ -31,10 +31,11 @@
   <tr><td>One-finger movement &amp; taps</td><td>Move the cursor, click, double-tap to select a word, or triple-tap to select a paragraph in compatible apps.</td></tr>
   <tr><td>Left &amp; right click buttons</td><td>Use dedicated mouse buttons. Hold Left click while moving another finger on the trackpad to select text or drag an object.</td></tr>
   <tr><td>Two-finger movement</td><td>Scroll vertically with momentum. Swipe horizontally for Back/Forward, or choose Scroll mode for horizontal scrolling. Tap with two fingers to right-click.</td></tr>
+  <tr><td>Spread / pinch two fingers</td><td>Zoom content in Preview and browsers that support native trackpad magnification. Place the Mac pointer over the image, PDF or webpage first; lift both fingers before switching to scrolling.</td></tr>
   <tr><td>Three-finger swipes</td><td>Swipe up for Mission Control, down for App Exposé, and left/right to move between desktop Spaces or full-screen apps.</td></tr>
   <tr><td>Keyboard &amp; shortcuts</td><td>Type into the focused Mac field. Use Quick search, Return, Backspace, arrows and common Command-key shortcuts.</td></tr>
   </tbody></table>
-  <p class="note feature-footer">Gesture and shortcut behavior depends on the active app and your Mac’s keyboard settings. Pinch-to-zoom is not included.</p>
+  <p class="note feature-footer">Gesture and shortcut behavior depends on the active app and your Mac’s keyboard settings. Pinch zoom uses native magnification events; support depends on the target app and content.</p>
 </div></section>
 <section class="section" id="setup" aria-labelledby="setup-title"><div class="wrap">
   <p class="eyebrow">Start here</p><h2 id="setup-title">Set up once. Scan to connect.</h2><p class="lede">Recline bundles its own server and Python runtime. You don’t need Terminal, developer tools or an iPhone app.</p>
@@ -60,12 +61,13 @@
   <details><summary>The phone can’t reach my Mac</summary><p>Confirm the shared Wi-Fi or hotspot connection, check the Mac firewall permission, and restart Recline’s server. Guest networks may block devices from communicating even when both are connected. Network settings in the Recline menu lets you select the Mac’s private IPv4 address or change the default port, 8765.</p></details>
   <details><summary>I changed Wi-Fi or switched to a hotspot</summary><p>Choose Restart server in Recline, then scan the new QR. Old addresses may no longer reach your Mac. A new server certificate for the selected IP uses the same saved root certificate, so the phone normally keeps its existing trust setup.</p></details>
   <details><summary>Clicks, typing or three-finger gestures do nothing</summary><p>Check Recline’s Accessibility permission. For Mission Control, App Exposé and Spaces, confirm the standard Control-arrow shortcuts are enabled under System Settings → Keyboard → Keyboard Shortcuts → Mission Control. The active Mac app must support the shortcut you’re using.</p></details>
+  <details><summary>Pinch zoom doesn’t respond</summary><p>Use Recline 1.2 or later, restart the Mac app, and reload Safari or scan the current QR. Make Preview or your browser active and put the Mac pointer over the image, PDF or webpage before pinching. Spread two fingers to zoom in; pinch inward to zoom out. Lift both fingers before switching to scrolling. Native magnification support and zoom limits depend on the target app and content.</p></details>
   <details><summary>Typing behaves oddly after I change Mac focus</summary><p>Tap the reset symbol beside the phone’s typing field before continuing. Recline does not read text back from the Mac and cannot detect caret or focus changes made with its physical mouse and keyboard. Text predictions, composition and selection behavior can vary by target app.</p></details>
   <details><summary>My phone won’t show the wide landscape trackpad</summary><p>Turn off Portrait Orientation Lock in iPhone Control Center, then rotate the phone. Landscape places the control panel on the left and the trackpad on the right.</p></details>
   <details><summary>How do I update Recline?</summary><p>Quit Recline, replace the app in Applications with the new version, and reopen it. Its saved certificate identity normally carries over. Scan the new QR to reconnect. If macOS asks again, re-enable Accessibility permission for the updated app.</p></details>
   <details><summary>How do I remove it?</summary><p>Quit Recline and move the app to the Trash. On iPhone, remove its certificate profile under Settings → General → VPN &amp; Device Management. Removing the app alone does not remove the trusted certificate from your phone.</p></details>
 </div></div></section>
 </main>
-<footer class="footer"><div class="wrap footer-row"><div><a class="brand" href="#">recline</a><p class="note">Your Mac, within reach. Version 1.1.1 for Apple Silicon.</p></div><a href="#setup">Back to the setup guide</a></div></footer>
+<footer class="footer"><div class="wrap footer-row"><div><a class="brand" href="#">recline</a><p class="note">Your Mac, within reach. Version 1.2.0 for Apple Silicon.</p></div><a href="#setup">Back to the setup guide</a></div></footer>
 </body>
 </html>
