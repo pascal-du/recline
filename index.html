@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Recline turns your iPhone into a trackpad and keyboard for your Mac. Explore the features and follow the complete Mac and iPhone setup guide.">
+  <meta name="theme-color" content="#1b2822">
+  <title>Recline — Your Mac, within reach</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="icon" href="./assets/favicon.png" type="image/png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar"><div class="wrap nav">
+  <a class="brand" href="#" aria-label="Recline home"><img src="./assets/status-logo.svg" width="25" height="32" alt="" aria-hidden="true"><span>recline</span></a>
+  <nav class="nav-links" aria-label="Main navigation"><a href="#features">Features</a><a href="#setup">Setup</a><a href="#help">Help</a><a class="button" href="./downloads/Recline-macOS-arm64.zip" download>Download for Mac</a></nav>
+</div></header>
+<main id="main">
+<section class="hero" aria-labelledby="hero-title"><div class="wrap hero-grid">
+  <div><p class="eyebrow">iPhone trackpad &amp; keyboard for Mac</p><h1 id="hero-title">Your Mac.<br>Within reach.</h1><p class="intro">Browse, scroll and type from wherever you’re comfortable. Recline turns your iPhone into a wireless trackpad and keyboard, while a small menu-bar app keeps your Mac connected.</p><a class="button light" href="./downloads/Recline-macOS-arm64.zip" download>Download Recline for Mac</a><p class="meta">Version 1.1.1 · Apple Silicon · One-time iPhone certificate setup</p></div>
+  <figure class="hero-art"><div class="logo"><img src="./assets/app-icon.svg" width="1024" height="1024" alt="Recline seated-person logo"></div><figcaption>A little more room to get comfortable.</figcaption></figure>
+</div></section>
+<div class="promise"><div class="wrap"><span>No iPhone app to install</span><span>No account required</span><span>Encrypted HTTPS connection</span><span>Runs in your Mac’s menu bar</span></div></div>
+<section class="section" aria-labelledby="use-title"><div class="wrap split">
+  <div><p class="eyebrow">A remote for the everyday</p><h2 id="use-title">Stay comfortable.<br>Stay in control.</h2><p class="lede">Use the Mac you already have, with the phone that’s already beside you.</p><p class="note">Keep your Mac’s display in view: Recline controls mouse and keyboard input. It does not mirror the screen.</p></div>
+  <ul class="use-list"><li><strong>Browse from the sofa</strong><span>Scroll through a webpage, switch tabs or search without getting up.</span></li><li><strong>Keep a bigger screen within reach</strong><span>Control a Mac connected to a monitor or TV, including playback controls exposed by the active app.</span></li><li><strong>Type with your phone</strong><span>Enter a search or a short message using the familiar iPhone keyboard.</span></li></ul>
+</div></section>
+<section class="section" id="features" aria-labelledby="features-title"><div class="wrap">
+  <p class="eyebrow">Familiar movements</p><h2 id="features-title">More than a remote click.</h2><p class="lede">A roomy trackpad, live typing and Mac shortcuts, all in Safari. Rotate your phone for a wide trackpad on the right and controls on the left.</p>
+  <table class="feature-table"><thead><tr><th scope="col">On your iPhone</th><th scope="col">On your Mac</th></tr></thead><tbody>
+  <tr><td>One-finger movement &amp; taps</td><td>Move the cursor, click, double-tap to select a word, or triple-tap to select a paragraph in compatible apps.</td></tr>
+  <tr><td>Left &amp; right click buttons</td><td>Use dedicated mouse buttons. Hold Left click while moving another finger on the trackpad to select text or drag an object.</td></tr>
+  <tr><td>Two-finger movement</td><td>Scroll vertically with momentum. Swipe horizontally for Back/Forward, or choose Scroll mode for horizontal scrolling. Tap with two fingers to right-click.</td></tr>
+  <tr><td>Three-finger swipes</td><td>Swipe up for Mission Control, down for App Exposé, and left/right to move between desktop Spaces or full-screen apps.</td></tr>
+  <tr><td>Keyboard &amp; shortcuts</td><td>Type into the focused Mac field. Use Quick search, Return, Backspace, arrows and common Command-key shortcuts.</td></tr>
+  </tbody></table>
+  <p class="note feature-footer">Gesture and shortcut behavior depends on the active app and your Mac’s keyboard settings. Pinch-to-zoom is not included.</p>
+</div></section>
+<section class="section" id="setup" aria-labelledby="setup-title"><div class="wrap">
+  <p class="eyebrow">Start here</p><h2 id="setup-title">Set up once. Scan to connect.</h2><p class="lede">Recline bundles its own server and Python runtime. You don’t need Terminal, developer tools or an iPhone app.</p>
+  <aside class="requirements" aria-labelledby="requirements-title"><h3 id="requirements-title">What you’ll need</h3><ul><li>An Apple Silicon Mac: M1 or later</li><li>An iPhone with Safari</li><li>Both devices on the same Wi-Fi, or the Mac joined to your iPhone’s Personal Hotspot</li><li>Permission to allow Mac input control and install the iPhone certificate</li></ul><p class="compatibility">The current download is for Apple Silicon, not Intel Macs. The build was tested on macOS 14.4; older macOS releases have not been verified.</p></aside>
+  <div class="split"><div class="setup-block" aria-labelledby="mac-setup-title"><span class="pill">On your Mac</span><h3 id="mac-setup-title">Install and allow control</h3><ol class="step-list">
+    <li><strong>Install Recline</strong><p>Unzip the download, move <b>Recline.app</b> into <b>Applications</b>, and open it. If an earlier Terminal server is running, stop it with Ctrl-C first.</p></li>
+    <li><strong>Open your trusted copy</strong><p>This build isn’t notarized. If macOS blocks it, only proceed if you trust its source: open <span class="path">System Settings → Privacy &amp; Security → Open Anyway</span>. <a href="https://support.apple.com/en-us/102445" target="_blank" rel="noopener noreferrer">Read Apple’s guidance</a>.</p></li>
+    <li><strong>Allow Accessibility access</strong><p>Enable Recline under <span class="path">System Settings → Privacy &amp; Security → Accessibility</span>. If it isn’t listed, click <b>+</b> and select the app from Applications. Recline retries after permission is granted.</p></li>
+    <li><strong>Allow the network connection</strong><p>Allow incoming connections or local-network access if macOS asks. Keep the Mac and iPhone on a network where they can reach each other.</p></li>
+  </ol></div>
+  <div class="setup-block" aria-labelledby="phone-setup-title"><span class="pill">On your iPhone · once per Mac</span><h3 id="phone-setup-title">Set up the HTTPS certificate</h3><ol class="step-list">
+    <li><strong>Export from your Mac</strong><p>In Recline, choose <b>Set up HTTPS on iPhone…</b>, then <b>Save certificate profile…</b>. Send the saved profile to your iPhone using AirDrop or another trusted transfer.</p></li>
+    <li><strong>Install the profile</strong><p>Open <span class="path">Settings → General → VPN &amp; Device Management</span>, or <b>Profile Downloaded</b>, and install it. Check that its unique <b>Recline … Local CA</b> name matches the name shown by your Mac.</p></li>
+    <li class="trust-step"><strong>Separately enable full trust</strong><p>Open <span class="path">Settings → General → About → Certificate Trust Settings</span>. Enable full trust for that same Recline certificate and confirm.</p><p><b>Installing the profile alone is not enough.</b> This separate switch is required for Safari to accept the connection. <a href="https://support.apple.com/en-us/102390" target="_blank" rel="noopener noreferrer">Apple’s certificate instructions</a>.</p></li>
+    <li><strong>Scan the current QR code</strong><p>Point the iPhone Camera at Recline’s QR and tap the link. Safari opens the HTTPS address and pairs automatically. If you see a certificate warning, check the setup instead of bypassing it.</p></li>
+  </ol></div></div>
+  <aside class="callout"><h3>Only trust the certificate from your own Mac</h3><p>This adds a root certificate to your iPhone’s trust store. Anyone with its private signing key could impersonate HTTPS sites to that phone. The key stays on your Mac; transfer only the exported public certificate profile. Remove the profile when you stop using Recline or no longer trust the Mac.</p></aside>
+</div></section>
+<section class="section everyday" aria-labelledby="everyday-title"><div class="wrap"><p class="eyebrow">After setup</p><h2 id="everyday-title">Open. Scan. Settle in.</h2><p class="lede">The QR includes the Mac’s address and pairing code, so there’s no code to type.</p><div class="flow"><article><h3>Open Recline</h3><p>The Mac app starts its local server automatically and shows the connection QR.</p></article><article><h3>Scan with your iPhone</h3><p>Open the camera link in Safari. Focus the Mac app you want to control, then use the trackpad or tap Keyboard.</p></article><article><h3>Keep it in the menu bar</h3><p>Close the QR window to keep working. Choose Quit Recline from the menu to stop the server and disconnect the phone.</p></article></div><p class="note">Pairing codes expire after two minutes, so scan the current QR. Only one phone controls the Mac at a time; disconnect it before pairing another.</p></div></section>
+<section class="section" aria-labelledby="privacy-title"><div class="wrap"><p class="eyebrow">Your devices, connected directly</p><h2 id="privacy-title">A private connection, with clear limits.</h2><div class="privacy-grid"><div><h3>Encrypted in transit</h3><p>Your page, pairing and live input use HTTPS and secure WebSockets when certificate verification succeeds. Recline has no cloud relay, ads or telemetry, and does not log the text you type.</p></div><div><h3>Keep access deliberate</h3><p>HTTPS does not protect a compromised phone or Mac, and other network devices can still attempt to disrupt the server. Never port-forward Recline to the internet, share its private certificate keys, or bypass a Safari certificate warning.</p></div></div></div></section>
+<section class="section" id="help" aria-labelledby="help-title"><div class="wrap"><p class="eyebrow">A little help</p><h2 id="help-title">Get connected. Stay connected.</h2><div class="faq">
+  <details open><summary>Safari says “This Connection Is Not Private”</summary><p>Check that the matching Recline profile is installed <b>and full trust is enabled</b> under Settings → General → About → Certificate Trust Settings. Compare the certificate name with your Mac, check both devices’ date and time, restart the server and scan its current QR. Do not choose the option to bypass Safari’s warning.</p></details>
+  <details><summary>The phone can’t reach my Mac</summary><p>Confirm the shared Wi-Fi or hotspot connection, check the Mac firewall permission, and restart Recline’s server. Guest networks may block devices from communicating even when both are connected. Network settings in the Recline menu lets you select the Mac’s private IPv4 address or change the default port, 8765.</p></details>
+  <details><summary>I changed Wi-Fi or switched to a hotspot</summary><p>Choose Restart server in Recline, then scan the new QR. Old addresses may no longer reach your Mac. A new server certificate for the selected IP uses the same saved root certificate, so the phone normally keeps its existing trust setup.</p></details>
+  <details><summary>Clicks, typing or three-finger gestures do nothing</summary><p>Check Recline’s Accessibility permission. For Mission Control, App Exposé and Spaces, confirm the standard Control-arrow shortcuts are enabled under System Settings → Keyboard → Keyboard Shortcuts → Mission Control. The active Mac app must support the shortcut you’re using.</p></details>
+  <details><summary>Typing behaves oddly after I change Mac focus</summary><p>Tap the reset symbol beside the phone’s typing field before continuing. Recline does not read text back from the Mac and cannot detect caret or focus changes made with its physical mouse and keyboard. Text predictions, composition and selection behavior can vary by target app.</p></details>
+  <details><summary>My phone won’t show the wide landscape trackpad</summary><p>Turn off Portrait Orientation Lock in iPhone Control Center, then rotate the phone. Landscape places the control panel on the left and the trackpad on the right.</p></details>
+  <details><summary>How do I update Recline?</summary><p>Quit Recline, replace the app in Applications with the new version, and reopen it. Its saved certificate identity normally carries over. Scan the new QR to reconnect. If macOS asks again, re-enable Accessibility permission for the updated app.</p></details>
+  <details><summary>How do I remove it?</summary><p>Quit Recline and move the app to the Trash. On iPhone, remove its certificate profile under Settings → General → VPN &amp; Device Management. Removing the app alone does not remove the trusted certificate from your phone.</p></details>
+</div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-row"><div><a class="brand" href="#">recline</a><p class="note">Your Mac, within reach. Version 1.1.1 for Apple Silicon.</p></div><a href="#setup">Back to the setup guide</a></div></footer>
+</body>
+</html>
